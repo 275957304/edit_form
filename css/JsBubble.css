@@ -1,0 +1,134 @@
+.jsBubble_s{position:absolute; min-width:50px; z-index:9900;}
+.jsBubble_s .tipCon{
+	background-color:#ffffff;
+    border:1px solid #efefef;
+	font-size:12px;
+	/*box-shadow:2px 2px 2px rgba(0,0,0,0.2);*/
+	box-shadow:0 0 5px rgba(0,0,0,0.2);
+	border-radius: 8px;
+	behavior: url(PIE.htc);
+	overflow: visible;
+	}
+.jsBubble_s .tipTitle{
+	height:50px;
+	line-height:50px;
+	color:#484848;
+	font-size:16px;
+	padding: 0 32px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	}	
+.jsBubble_s .arrowT,.jsBubble_s .arrowR,.jsBubble_s .arrowB,.jsBubble_s .arrowL{
+	position:absolute;
+	font-size:30px!important;
+	z-index:9900;
+	width:30px;
+	border-bottom:none!important;
+	}
+
+.jsTip_close{
+	outline:none;
+    cursor: pointer;
+    display: block;
+    font-size:14px;
+    font-weight: bold;
+    position: absolute;
+    right:16px;
+    text-align:center;
+    top:16px;
+    width:19px;
+    height: 18px;
+	color:#efefef;
+	text-decoration:none;
+	background:url(../img/jsbox_close.png) -3px -5px no-repeat;
+}
+.jsTip_close:hover{
+	color:#444 !important;
+	}
+
+.jsBubble_s .tipCon_t{
+	z-index:1002;
+	padding:5px 8px;
+	/*background:#fff;*/
+	overflow:auto;
+	}
+.jsBubble_s .arrowt,.jsBubble_s .arrowb{
+	font: 0px/9999px serif;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+	width:0px;
+	height:0px;
+	color:inherit;
+}
+	
+.jsBubble_s .arrowT{left:10px;top:-8px; _top:-8px;}
+
+.jsBubble_s .arrowT .arrowt{
+	border-width:0 9px 9px; 
+	border-style:dashed dashed solid;
+	border-color:transparent transparent #f3f3f3;
+	z-index:3;
+	top:1px;
+}
+.jsBubble_s .arrowT .arrowb{
+	border-width:0 9px 9px; 
+	border-style:dashed dashed solid;
+	border-color:transparent transparent #ccc;
+}
+
+.jsBubble_s .arrowR{ right:-30px; top:7px; _top:7px;}
+
+.jsBubble_s .arrowR .arrowt{
+	border-width:7px; 
+	border-style:dashed dashed dashed solid ;
+	border-color:transparent transparent transparent #f3f3f3;
+	z-index:3;
+	left:-1px;
+}
+.jsBubble_s .arrowR .arrowb{
+	border-width:7px; 
+	border-style:dashed dashed dashed solid ;
+	border-color:transparent transparent transparent #ccc;
+}
+
+.jsBubble_s .arrowB{left:20px; bottom:0px; _bottom:0px;}
+
+.jsBubble_s .arrowB .arrowt{
+   	border-width:9px 9px 0px; 
+	border-style:solid dashed dashed ;
+	border-color:#f3f3f3 transparent transparent;
+	z-index:3;
+    bottom:-7px; 
+	}
+.jsBubble_s .arrowB .arrowb{
+   	border-width:9px 9px 0px; 
+	border-style:solid dashed dashed ;
+	border-color:#ccc transparent transparent;
+	bottom:-8px; 
+	}
+
+.jsBubble_s .arrowL{left:-14px;top:7px;_top:7px;}
+
+.jsBubble_s .arrowL .arrowt{
+	border-width:7px; 
+	border-style:dashed solid dashed dashed  ;
+	border-color:transparent #f3f3f3 transparent transparent ;
+	z-index:3;
+	left:1px;
+	}
+.jsBubble_s .arrowL .arrowb{
+	border-width:7px; 
+	border-style:dashed solid dashed dashed  ;
+	border-color:transparent #ccc transparent transparent ;
+}	
+
+.loading{
+width:100%;
+height:100%;
+min-height:100px;
+background:url(../../../../js/plug-in/JsBubble/loading.gif) no-repeat center center;
+margin:0 auto;
+}

@@ -1,0 +1,47 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*.c_mark { width: 100%; height: 100%; position: fixed; left: 0; top: 0;}
+.c_hover_tip { font-size: 14px; position: absolute; padding:5px 12px; line-height: 21px; background: url(/static/images/plugin_center/bg_70.png); border-radius: 5px; color: #fff;z-index: 9999999999;}*/
+.c_ts_wh{ display: inline-block; width: 20px; height: 20px; background: url(../img/help3.png) no-repeat center 1px; margin-left: 5px; vertical-align: middle;}
+.c_mark { width: 100%; height: 100%; background: #000; opacity: 0.7; filter:alpha(opacity:70); position: fixed; left: 0; top: 0; z-index: 9999900;}
+.c_hover_tip { font-size: 14px; position: absolute; padding: 5px 12px; line-height: 22px; background: url(../img/bg_70.png); border-radius: 5px; color: #fff;}
+.c_loading { position: fixed; z-index: 99999900; min-width: 90px; padding: 10px;  background: url(../img/bg_70.png); color: #fff; border-radius: 5px; text-align: center; font-size: 14px; font-weight: bold;}
+
+/*分页样式*/
+.c_paginationa {}
+.c_paginationa .c_count { width: 60px; height: 20px; margin-left: 5px; line-height: 21px; color: #202020; background: #fff; text-align: center; position: relative; float: left;}
+.c_paginationa .c_count p { border: 1px solid #c8c8c8; cursor: pointer;color: #616161;}
+.c_paginationa .c_count div { width: 60px; position: absolute; left: 0; top: -84px; display: none; background: #fff;}
+.c_paginationa .c_count div span { display: block; height: 20px; border: 1px solid #c8c8c8; border-bottom: 0; cursor: pointer;}
+.c_pagenum {height: 21px;line-height: 21px; float: left; padding-top: 1px;}
+.c_pagenum .disabled{display: none;}
+.c_pagenum span.current,.c_pagenum a:hover{background-color: #6fc5ff; color: #fff;}
+.c_pagenum span,.c_pagenum a {color: #828282; font-size: 14px; display: block;margin: 0 5px; padding: 0 8px;float: left;}
+.c_pagenum .prevPage, .c_pagenum .nextPage {height: 24px;width: 24px;text-indent: -999px; overflow: hidden;display: block;padding: 0px 0px;}
+.c_pagenum .prevPage {background-image: url(../img/cpre.png); background-repeat: no-repeat;}
+.c_pagenum .prevPage:hover{background:url(../img/cpre_active.png) no-repeat; cursor:pointer}
+.c_pagenum .nextPage {background-image: url(../img/cnext.png); background-repeat: no-repeat;}
+.c_pagenum .nextPage:hover{background:url(../img/cnext_active.png) no-repeat; cursor:pointer} 
+
+/*layer_mark*/
+.layer_mark{width: 100%;height: 100%;position: fixed; left: 0px; top: 0px; z-index: 999999;background: url(../img/bg_20.png);}
+.layer_mark .common_layer{width: 380px; border:1px solid #a4a4a4;position: fixed; left: 50%;margin-left: -191px; top: 50%;margin-top: -100px;z-index: 902; background: #fff;border-radius: 4px; overflow: hidden; box-shadow: 0 0 5px #888;behavior:url(../../../static/css/PIE.htc);}
+.common_layer .layer_title{height: 51px; line-height: 51px; border-bottom:1px solid #e0e0e0; padding: 0 23px;}
+.common_layer .layer_title p{color:#353535; font-size: 16px;font-weight: bold; float:left;}
+.common_layer .layer_title .close{display: inline-block; margin-top: 17px; float: right; width: 18px; height: 18px; background: url(../img/close.png) no-repeat center center;}
+.common_layer .layer_title .close:hover{background: url(../img/close_hover.png) no-repeat center center;}
+.common_layer .layer_cont{padding: 20px 23px; overflow: hidden;}
+.common_layer .layer_cont .influenceList{ padding: 15px 0px 15px 24px;border:1px solid #e0e0e0; border-radius: 4px;background: #f6f6f6; margin-top: 13px;}
+.common_layer .layer_cont .influenceList dl{max-height: 150px; overflow-x:hidden; overflow-y:auto;  }
+.common_layer .layer_cont .influenceList dd{height: 30px; line-height: 30px; overflow: hidden;color: #9c9c9c;}
+.common_layer .layer_cont .p1{color:#666; font-size: 16px;}
+.common_layer .layer_cont .contentHtml{font-size: 16px;}
+.common_layer .layer_cont .p2{font-size: 14px; color: #9c9c9c; margin-top: 5px;}
+.common_layer .layer_cont .contentHtml span,.common_layer .layer_cont .p2 span,.common_layer .layer_cont .p1 span{color:#f97c7c;display: inline; margin: 0 3px;}
+.common_layer .layer_btn,.common_layer .paid_btn{padding: 5px 23px 23px 23px; overflow: hidden;}
+.common_layer .layer_btn a{display: inline-block; color: #5c5c5c; float: right; height: 36px; line-height: 36px; padding: 0 28px; border-radius: 4px; overflow: hidden; behavior:url(PIE.htc);}
+.common_layer .layer_btn a.btn_ok{background: #53a4f4; color: #fff;}
+.common_layer .layer_btn a.btn_ok:hover{background: #5089c1;color: #fff;}
+.common_layer .layer_btn a.gopay_btn{ padding: 0px; float: right; width: 135px; height: 36px; background: url(../img/btn_zhifubao.png) no-repeat center center;}
+.common_layer .paid_btn a{display: inline-block; float: right; width: 113px; height: 34px; line-height: 34px; margin-left: 10px; text-decoration: none; text-align: center; border: 1px solid #bdbdbd; color: #5c5c5c; border-radius: 3px;}
+.common_layer .paid_btn a.btn_ok{color: #53a4f4;}

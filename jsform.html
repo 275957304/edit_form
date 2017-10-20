@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>表单</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.dad.js"></script>
+</head>
+<body class="gray-bg">
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <div id="leftForm">
+				<h3 class="form-tit">通用字段</h3>
+				<div class="clearfix" id="col1">
+					<div data-type="text" class="btn-field"><span class="glyphicon glyphicon-text-width"></span>单行文本</div>
+					<div data-type="textarea" class="btn-field"><span class="glyphicon glyphicon-indent-right"></span>多行文本</div>
+					<div data-type="number" class="btn-field"><span class="glyphicon glyphicon-sound-6-1"></span>数字</div>
+				</div>
+			</div>
+        </div>
+		<div class="col-lg-6">
+            <div id="middleForm">
+				<div id="fields">
+				
+				</div>
+			</div>
+        </div>
+		<div class="col-lg-3">
+            <div id="rightForm">
+				fdsfsd
+			</div>
+        </div>
+    </div>
+</div>
+<script src="http://community.holichat.com/Public/Common/js/bootstrap.min.js?v=3.3.5"></script>
+<script type="text/javascript">
+$(function(){
+	$("#col1 .btn-field").on('click',function(){
+		var type = $(this).data('type');
+		switch(type){
+			case 'text' : form.text('text'); break;
+			case 'textarea' : form.textarea('textarea'); break;
+			case 'number' : form.number('number');; break;
+			default:
+				alert('没有找到');
+		}
+	})
+	
+	var form = {
+		text : function(type){
+			var text = '<div data-type="'+ type +'" class="form-default"><div class="move"><label class="desc">单行文本<span class="req hide"> *</span></label><div class="content"><input type="text" /></div></div><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span></div>';
+			$('#fields').append(text)
+		},
+		textarea : function(type){
+			var text = '<div data-type="'+ type +'" class="form-default"><div class="move"><label class="desc">多行文本<span class="req hide"> *</span></label><div class="content"><textarea class="input s"></textarea></div></div><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span></div>';
+			$('#fields').append(text)
+		},
+		number : function(type){
+			var text = '<div data-type="'+ type +'" class="form-default"><div class="move"><label class="desc">数字<span class="req hide"> *</span></label><div class="content"><input type="text" /></div></div><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span></div>';
+			$('#fields').append(text)
+		}
+		
+	}
+	
+	//增加
+	$('#fields').delegate('.glyphicon-plus','click',function(){
+		var html = $(this).parent().clone();
+		$(this).parent().after(html);
+	})
+	//删除
+	$('#fields').delegate('.glyphicon-minus','click',function(){
+		$(this).parent().remove();
+	})
+	
+
+	$('#fields').dad({
+		draggable: '.move',
+		callback: function (e) {
+			var type = e.data('type');
+			createEdit(type)
+		}
+	});
+	
+	function createEdit(type){
+		$('#rightForm').empty().append('这里生成' + type)	
+	}	
+});
+</script>
+</body>
+</html>

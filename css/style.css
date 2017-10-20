@@ -1,0 +1,121 @@
+.dad-noSelect,.dad-noSelect *{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: -webkit-grabbing !important;
+    cursor: -moz-grabbing !important;
+}
+
+.dad-container{
+    position: relative;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.dad-container::after{
+    content: '';
+    clear: both !important;
+    display: block;
+}
+.dad-active .dad-draggable-area{
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+}
+.dads-children-clone{
+    opacity: 0.8;
+    z-index: 9999;
+    pointer-events: none;
+}
+.dads-children-placeholder{
+    overflow: hidden;
+    position: absolute !important;
+    box-sizing: border-box;
+    border:1px dashed #639BF6;
+    margin:5px;
+    text-align: center;
+    color: #639BF6;
+    font-weight: bold;
+}
+textarea,input[type=text],input[type=password],select {
+	font-family:"Verdana","微软雅黑","宋体","Lucida Grande";
+	padding:7px;
+	border:1px solid #ddd;
+	outline:0;
+	box-sizing:border-box
+}
+select {
+	padding:5px 7px
+}
+textarea.error,input[type=text].error,input[type=password].error,select.error,div.error {
+	border-color:#b94a48;
+	background-color:#fff!important
+}
+textarea.block,input[type=text].block,input[type=password].block,select.block {
+	width:100%;
+	box-sizing:border-box
+}
+.clearfix:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0
+}
+
+
+#leftForm {
+	border:1px solid #ddd;
+	background-color:#fff;
+}
+#middleForm{
+	overflow:hidden;
+	min-height:500px;
+	background-color:#fff;
+	border:1px solid #ddd
+}
+#rightForm {
+	overflow:hidden;
+	border:1px solid #ddd;
+	background-color:#fff;
+	box-sizing:border-box;
+	z-index:900
+}
+.form-tit{
+	background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    padding: 9px 15px;
+	margin:0;
+	font-size:14px;
+}
+#col1{list-style:none;padding:0;}
+#col1 .btn-field{width:50%; float:left; overflow:hidden; height:40px; line-height:40px; text-align:center; border-right:1px solid #ccc; border-bottom:1px solid #ccc; cursor: pointer;}
+#col1 .btn-field span{margin-right:10px;}
+#col1 .btn-field:nth-child(2){border-right:none;}
+#fields{padding:10px;}
+.form-default{padding:10px; position:relative; border:1px dashed #fff;}
+.form-default:hover {
+	border:1px dashed #bbb;
+	background-color:#fff
+}
+#fields .focused {
+    background-color: #fffbef;
+    border: 1px solid #e8dbad;
+}
+
+.form-default .glyphicon-plus,.form-default .glyphicon-minus,.form-default .glyphicon-edit{position:absolute; top:5px; width:20px; height:20px; line-height:20px; font-size:13px; text-align:center; color:#fff; display:none; cursor: pointer;}
+.form-default:hover .glyphicon-plus,.form-default:hover .glyphicon-minus,.form-default:hover .glyphicon-edit{display:block;}
+.form-default .glyphicon-edit{background:#04be02; right:5px; top:35px; width:40px; height:40px; line-height:40px;}
+.form-default .glyphicon-plus{background:#04be02; right:5px;}
+.form-default .glyphicon-minus{background:#04be02; right:30px;}
+.form-default .move{margin-right:80px;}
+#rightForm{padding:10px;}
+
+	
+	

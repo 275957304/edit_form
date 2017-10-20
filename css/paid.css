@@ -1,0 +1,78 @@
+
+/* Standard */
+.mleft10 {margin-left: 10px;}
+.mt10{margin-top:10px;}
+.mt30{margin-top:30px;}
+.num_Warning {color: #ef6262;}
+.payment_mode {float: left;cursor: pointer;border-radius: 8px;}
+.payment_mode .payment {width: 140px;height: 36px;}
+.payment_ul {margin-top: 10px;height: 36px;}
+.payment_ul .payment_mode .zfb {background: url(../img/zfb_no.png) no-repeat center;}
+.payment_ul .payment_mode .wx {background: url(../img/wx_no.png) no-repeat center;}
+.payment_ul .payment_mode .yh {background: url(../img/yh_no.png) no-repeat center;}
+.payment_ul .active .zfb {background: url(../img/zfb.png) no-repeat center;}
+.payment_ul .active .wx {background: url(../img/wx.png) no-repeat center;}
+.payment_ul .active .yh {background: url(../img/yh.png) no-repeat center;}
+.payment_ul .payment_mode .zfb:hover {background: url(../img/zfb_no.png) no-repeat center;}
+.payment_ul .payment_mode .wx:hover {background: url(../img/wx.png) no-repeat center;}
+.payment_ul .payment_mode .yh:hover {background: url(../img/yh.png) no-repeat center;}
+
+
+.show_smallWrap,.dialog_seniorUser .show_dialog,.dialog_seniorUser .show_submitC{ position: fixed; top: 50%;left: 50%;border: 1px solid #bdbdbd; z-index: 99999910; background: #fff; border-radius: 8px; overflow: hidden; font-size: 14px;-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.2); -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.2); box-shadow:0 0 10px rgba(0, 0, 0, 0.2);}
+.show_smallWrap .head_title,.dialog_seniorUser .atitle { min-width: 400px; padding: 0 32px; line-height: 50px; border-bottom: 1px solid #efefef; position: relative;color: #484848;font-size: 16px;}
+.show_smallWrap .head_title .small_close,.dialog_seniorUser .aclose { position: absolute; right: 16px; top: 16px; display: block; width: 18px; height: 18px; background: url('/static/images/plugin_center/close.png'); cursor: pointer;}
+.show_smallWrap .head_title .small_close:hover,.dialog_seniorUser .aclose:hover { background: url('../img/close_hover.png');}
+.show_smallWrap .small_wrap { -min-height: 160px;}
+.show_smallWrap .small_content,.dialog_seniorUser .amain { padding: 16px 32px 20px;}
+
+.show_childWrap .btn_wrap, .show_smallWrap .btn_wrap { padding: 10px 32px 20px; overflow: hidden; text-align: right;}
+.show_childWrap .btn_wrap p {text-indent:14px;}
+.show_childWrap .btn_default, .show_smallWrap .btn_default { float: right;}
+.show_childWrap .btn_none, .show_smallWrap .btn_none { float: right;width: 80px;}
+
+.small_content .default_p1 { font-size: 14px; line-height: 26px;color: #484848;}
+.small_content .default_p2 { color: #aaaaaa;font-size: 12px;}
+
+
+.plugin_paid_confim .p1 {font-size: 14px !important;border-bottom: 0px solid #cccccc;margin: 0 !important;padding: 0 !important;line-height: 26px;}
+.plugin_paid_confim .p2 {color: #aaaaaa !important;line-height: 2 !important;}
+.plugin_paid_confim .paid_wrap { text-align: right; padding-top: 24px;}
+.plugin_paid_confim .paid_wrap a { display: inline-block; width: 113px; height: 34px; line-height: 34px; margin-left: 10px; text-decoration: none; text-align: center; border: 1px solid #bdbdbd; color: #5c5c5c; border-radius: 4px;}
+
+.paid_mark,.dialog_seniorUser {width: 100%;height: 100%;position: fixed; left: 0px;top: 0px; z-index: 9999906; background: url(../img/bg_20.png);}
+
+/* 高级用户购买 */
+.dialog_seniorUser {z-index: 9999904;}
+.dialog_seniorUser .mL24 {margin-left: 24px;border-bottom: 1px dotted #cccccc;}
+.dialog_seniorUser .mR24 {margin-right: 24px;border-bottom: 1px dotted #cccccc;}
+.dialog_seniorUser .show_dialog,.dialog_seniorUser .show_submitC {z-index: 9999905;width: 586px;margin-left: -293px;margin-top: -300px;min-height: 500px;}
+.dialog_seniorUser .show_dialog .buy_time_length .expireTime {display: inline-block;margin-left: 20px;}
+.dialog_seniorUser .show_dialog .aprice_info {border: 1px solid #cccccc;padding: 5px 0 0;}
+.dialog_seniorUser .show_dialog .aprice_info td:first-child {text-align: left;}
+.dialog_seniorUser .show_dialog .aprice_info td:last-child {text-align: right;}
+.dialog_seniorUser .show_dialog .aprice_info tr td.aDeductibleHis {position: relative;}
+.dialog_seniorUser .show_dialog .aprice_info .deduction {position: relative;}
+.dialog_seniorUser .show_dialog .aprice_info tr.last p {border-bottom: 0px dotted #cccccc;}
+.dialog_seniorUser .show_dialog .aprice_info td {height: 46px;line-height: 46px;}
+.dialog_seniorUser .show_dialog .aprice_info tr:last-child td {height: 66px;line-height: 66px;background: #eeeeee;padding: 0 24px;}
+.dialog_seniorUser a:hover,.show_smallWrap .btn_wrap a:hover {color: #fff;background: #75b6f6;}
+.dialog_seniorUser .show_submitC .amain {text-align: center;}
+.dialog_seniorUser .show_submitC .amain img {margin-top: 120px;}
+.dialog_seniorUser select, .dialog_seniorUser input {height: 30px;line-height: 30px;border: 1px solid #cccccc; border-radius: 4px;padding: 0 8px;width: 150px;}
+.dialog_seniorUser input {width: 132px;}
+.dialog_seniorUser .show_submitC .amain p {font-size:16px;height: 28px;line-height: 28px;}
+.dialog_seniorUser .show_submitC .amain .sub1 {color: #484848; margin-top: 12px;}
+.dialog_seniorUser .show_submitC .amain .sub2 {color: #aaaaaa; font-size: 12px;}
+.dialog_seniorUser .mTitle {height: 32px;line-height: 32px;text-align: left;width: 110px;display: inline-block;}
+.dialog_seniorUser .mTitle .ckbox span {display: inline-block;float: left; width: 16px; margin-top: 7px; margin-right: 9px; height: 16px; background: url(../img/checkbox1.png) no-repeat center center;}
+.dialog_seniorUser .mTitle .active span {background: url(../img/checkbox2.png) no-repeat center center;}
+.dialog_seniorUser .promo .clues {padding-left: 5px;font-size: 12px;}
+.dialog_seniorUser .promo .colBlur {color: #53a4f4;}
+.dialog_seniorUser .c_ht {position: absolute;display: block; width: 20px; height: 20px; background: url(/static/images/help.png) no-repeat center 1px; right: 2px;top: 14px;}
+.dialog_seniorUser .failureBt {background-color: #d1d1d1 !important;}
+.dialog_seniorUser .failureBt:hover {background-color: #d1d1d1 !important;}
+.dialog_seniorUser .failureFont {color:#d1d1d1!important;}
+.subYesBT {padding: 0 16px;}
+.c_hover_tip_p {font-size: 14px; position: absolute; padding: 5px 12px; line-height: 22px; background: url(../img/plugin_center/bg_70.png); border-radius: 5px; color: #fff;}
+.newWJButton{display: inline-block;border-radius: 4px;background: #aaa !important;font-size: 14px;margin-left: 20px;color: #fff !important;height: 28px;line-height: 28px;text-align: center;vertical-align: baseline;outline: medium none;padding: 0 11px;}
+

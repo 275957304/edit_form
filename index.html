@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>问卷设计-员工培训调查</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" CONTENT="no-cache">
+<meta http-equiv="Cache-Control" CONTENT="no-store">
+<meta http-equiv="Expires" content="0" />
+<!--  https://www.wenjuan.com//static/images/xjwn_index_button.png -->
+<link href="css/public_v2.css?v=136eeee26b9f30fb800abfa027702b4b" rel="stylesheet">
+<link href="css/style_v2.css" rel="stylesheet">
+<link href="css/popuplayer_v2.css?v=330522759aa1ceac6d051852d13c04a0" rel="stylesheet">
+<link href="css/edit_cq.css" id="css_url" rel="stylesheet">
+
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.10.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<script src="https://cdn.bootcss.com/jqueryui/1.10.0/jquery-ui.min.js"></script>
+<script src="js/json.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=6a92e68080ab6c0cd8973ddb90668c47"></script>
+<link href="css/paid.css?" rel="stylesheet">
+<script type="text/javascript" src="js/paid.js"></script>
+<script type="text/javascript" src="js/base_utils.js"></script>
+</head>
+<body>
+<div class="zon_v2 clear">
+<div class="wjContent">
+<div class="cq_content clear">
+<div class="row-fluid clear">
+<div class="rows1">
+<div class="well sidebar-nav affix-top" id="accordion1">
+<div class="accordion-group">
+<h4 class="tc">
+<a href="javascript:;">
+常用题型
+<i class="icon_on"></i>
+</a>
+</h4>
+<ul class="ul-tool collapse">
+<li class="moduleL" name="2">
+<a href="javascript:;">
+<i class="basic-too11-icon-active"></i>
+单选题
+</a>
+</li>
+<li class="moduleL" name="3">
+<a href="javascript:;">
+<i class="basic-too12-icon-active"></i>
+多选题
+</a>
+</li>
+<li class="moduleL" name="2" disp_type="image_single">
+<a href="javascript:;">
+<i class="basic-too2014-icon-active"></i>
+图片选择题
+</a>
+</li>
+<!-- <li class="moduleL" name="3" disp_type="image_multiple">
+<a href="javascript:;">
+<i class="basic-too2014-icon-active"></i>
+图片多选题
+</a>
+</li> -->
+<li class="moduleL" name="6">
+<a href="javascript:;">
+<i class="basic-too13-icon-active"></i>
+填空题
+</a>
+</li>
+<!-- <li class="moduleL" name="6" disp_type="multi_line_blank">
+<a href="javascript:;">
+<i class="basic-too200-icon-active"></i>
+多行填空题
+</a>
+</li> -->
+<li class="moduleL" name="95">
+<a href="javascript:;">
+<i class="basic-too16-icon-active"></i>
+多项填空题
+</a>
+</li>
+<li class="moduleL" name="60">
+<a href="javascript:;">
+<i class="basic-too15-icon-active"></i>
+排序题
+</a>
+</li>
+<li class="moduleL" name="50">
+<a href="javascript:;">
+<i class="basic-too14-icon-active"></i>
+打分题
+</a>
+</li>
+<li class="moduleL" name="2" disp_type="font_vote_single">
+<a href="javascript:;">
+<i class="basic-too114-icon-active"></i>
+文字投票题
+</a>
+</li>
+<li class="moduleL" name="3" disp_type="image_vote_single">
+<a href="javascript:;">
+<i class="basic-too115-icon-active"></i>
+图片投票题
+</a>
+</li>
+<li class="moduleL" name="4">
+<a href="javascript:;">
+<i class="basic-too18-icon-active"></i>
+矩阵选择题
+</a>
+</li>
+<!-- <li class="moduleL" name="5">
+<a href="javascript:;">
+<i class="basic-too18-icon-active"></i>
+矩阵多选题
+</a>
+</li> -->
+<li class="moduleL" name="70">
+<a href="javascript:;">
+<i class="basic-too111-icon-active"></i>
+描述说明
+</a>
+</li>
+<li class="moduleL" name="3" disp_type="upload_file">
+<a href="javascript:;">
+<i class="basic-too2015-icon-active"></i>
+上传题
+</a>
+</li>
+
+<li class="moduleL" name="50" disp_type="nps_score">
+<a href="javascript:;">
+<i class="basic-too1nps_score-icon-active"></i>
+NPS题
+</a>
+</li>
+
+<li class="moduleL" name="50" disp_type="geographical_multiple_blank">
+<a href="javascript:;">
+<i class="basic-too1geographical_multiple_blank-icon-active"></i>
+地理位置题
+</a>
+</li>
+
+<li class="moduleL" name="page">
+<a href="javascript:;">
+<i class="basic-too112-icon-active"></i>
+分页
+</a>
+</li>
+</ul>
+<h4 class="tc">
+<a href="javascript:;">
+更多题型
+<i class=""></i>
+</a>
+</h4>
+<ul id="common" class="ul-tool collapse" style="display:none;">
+<li class="moduleL" name="7">
+<a href="javascript:;">
+<i class="basic-too110-icon-active"></i>
+矩阵打分题
+</a>
+</li>
+<li class="moduleL" name="100">
+<a href="javascript:;">
+<i class="basic-too19-icon-active"></i>
+矩阵填空题
+</a>
+</li>
+<li class="moduleL" name="sex">
+<a href="javascript:;">
+<i class="basic-too207-icon-active"></i>
+性别
+</a>
+</li>
+<li class="moduleL" name="mobile">
+<a href="javascript:;">
+<i class="basic-too202-icon-active"></i>
+手机
+</a>
+</li>
+<li class="moduleL" name="email">
+<a href="javascript:;">
+<i class="basic-too203-icon-active"></i>
+邮箱
+</a>
+</li>
+<li class="moduleL" name="age">
+<a href="javascript:;">
+<i class="basic-too2020-icon-active"></i>
+生日
+</a>
+</li>
+<li class="moduleL" name="city">
+<a href="javascript:;">
+<i class="basic-too2019-icon-active"></i>
+城市
+</a>
+</li>
+<li class="moduleL" name="address">
+<a href="javascript:;">
+<i class="basic-too204-icon-active"></i>
+地址
+</a>
+</li>
+<!-- <li class="moduleL" name="name">
+<a href="javascript:;">
+<i class="basic-too201-icon-active"></i>
+姓名
+</a>
+</li> -->
+<li class="moduleL" name="work_ex">
+<a href="javascript:;">
+<i class="basic-too208-icon-active"></i>
+工作年限
+</a>
+</li>
+<li class="moduleL" name="education">
+<a href="javascript:;">
+<i class="basic-too209-icon-active"></i>
+教育程度
+</a>
+</li>
+<li class="moduleL" name="income">
+<a href="javascript:;">
+<i class="basic-too2010-icon-active"></i>
+个人收入
+</a>
+</li>
+<li class="moduleL" name="company">
+<a href="javascript:;">
+<i class="basic-too2011-icon-active"></i>
+工作单位
+</a>
+</li>
+<li class="moduleL" name="marriage">
+<a href="javascript:;">
+<i class="basic-too2012-icon-active"></i>
+婚姻状况
+</a>
+</li>
+<li class="moduleL" name="70" disp_type="split_line">
+<a href="javascript:;">
+<i class="basic-too2017-icon-active"></i>
+分割线
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!--/.rows1-->
+<div class="jt"></div>
+<div class="right_operate">
+<a href="javascript:;" class="close"></a>
+<h4 class="bt">题目设置</h4>
+<span class="promptSet">修改保存后即可看效果</span>
+<div class="operate_nr">
+<div class="setup"></div>
+<div class="btn_a">
+<p><a href="javascript:;" class="lj_btn jump_btn">跳转逻辑</a><a href="#" target="_blank" class="lj_tip2"></a></p>
+<p><a href="javascript:;" class="lj_btn display_btn">显示逻辑</a><a href="#" target="_blank" class="lj_tip2"></a></p>
+<p style="display: none;"><a href="javascript:;" class="option_relation_btn">选项关联</a></p>
+<p><a href="javascript:;" class="yy_btn">引用设置</a></a></p>
+</div>
+<div class="btn">
+<a href="javascript:;" class="gray_c">保存</a>
+<!-- <a href="javascript:;" class="reset">取消</a> -->
+</div>
+</div>
+</div>
+<!-- right_operate -->
+<div class="rows2 well2 Tj">
+<div class="cq_title">
+<h4 name="project" class="h4-bg T_edit p_title"><p style="text-align: center;">员工培训调查</p></h4>
+</div>
+<table class="table1 bg-m">
+<tr>
+<td class="rb">&nbsp;</td>
+<td>
+<div class="th4 T_edit p_begin_desc" name="begin_desc">欢迎参与本次问卷</div>
+</td>
+</tr>
+</table>
+<ul class="dragwen" id="question_box">
+<!-- 题目的html放这里 -->
+</ul>
+<ul class="ul_tail">
+<li class="module paging" oid="|" >
+<div class="topic_type">
+<div class="topic_type_menu">
+<div class="setup-group">
+<a class="DelPaging" href="javascript:;">
+<i class="del2-icon-active"></i>
+</a>
+</div>
+</div>
+<div class="topic_type_con">
+<div class="icon_paging"></div>
+<div class="fr con_paging">
+页码：
+<span>1/1</span>
+</div>
+</div>
+</div>
+<!-- <div class="updown">
+<a href="javascript:;">
+<i title="上移本题" class="up-icon-active"></i>
+</a>
+<a href="javascript:;">
+<i title="下移本题" class="down-icon-active"></i>
+</a>
+</div> -->
+</li>
+</ul>
+<table class="table1 bg-m">
+<tr>
+<td class="rb"></td>
+<td>
+<div class="selectEnd">
+<select id="end_desc_type">
+<option value="complete">正常完成</option>
+<option value="screenout">提前结束（不计入结果）</option>
+<!--option value="自动结束（指定份数）">自动结束（指定份数）</option-->
+<!--option value="自动结束（指定时间）">自动结束（指定时间）</option-->
+</select>
+<span> 时显示</span>
+</div>
+<h4 name='end_desc' class="th4 T_edit p_end_desc" id="end_desc">
+
+<p style="text-align: center;">您已完成本次问卷，感谢您的帮助与支持</p>
+
+</h4>
+</td>
+</tr>
+</table>
+<ul class="rk_btn">
+<li class="plugin_info">为此问卷添加下列应用</li>
+<li class="luck_draw" pid=59e36607d3578086eb288aed>抽奖应用</li>
+<li class="wechat_red" pid=59e36607d3578086eb288aed>微信红包</li>
+
+<li class="hide_logo">隐藏问卷网标识</li>
+
+<li class="plugin_app"><a href="/plugin/index/" target="_blank">更多应用</a></li>
+</ul>
+<!--/.rows2--> </div>
+<!--/.row-fluid--> </div>
+<!--/container-fluid-->
+</div>
+</div>
+<script type="text/javascript" src="js/cq_edit.js" ></script>
+<script type="text/javascript" src="js/common.js" ></script>
+<!--日期组件-->
+<link type="text/css" rel="stylesheet" href="css/zebra_datepicker_metallic.css" />
+<script type="text/javascript" src="js/zebra_datepicker.js"></script>
+<!--应用购买-->
+<script src="js/tools.js"></script>
+<link href="css/common.css" rel="stylesheet">
+<script src="js/plugin_center.js"></script>
+<script type="text/javascript">　
+var project = {"page_count": 1, "share_status": 0, "official_status": 0, "begin_desc": "\u6b22\u8fce\u53c2\u4e0e\u672c\u6b21\u95ee\u5377", "short_id": "RfumEn", "is_struct_change": 1, "questionpage_id_list": ["59e36607d3578086eb288aee"], "project_func_id": "51dd234e9b9fbe6646bf4dd0", "questionpage_list": [{"updated": {"$date": 1508103815026}, "_id": {"$oid": "59e36607d3578086eb288aee"}, "question_id_list": ["59e36607d3578086eb288aef", "59e36607d3578086eb288af3", "59e36607d3578086eb288afc", "59e36607d3578086eb288afe", "59e3662992beb5390c1c83d1", "59e3662e92beb53a3726ad53", "59e3663092beb53abfadf04f", "59e3667a92beb53a3726ad5f", "59e3668292beb538b8f79e80", "59e36a2892beb53ae940e0ce", "59e36a3b92beb539b460802f", "59e36a3f92beb53860d3e19c", "59e36a4192beb539366c6ee2", "59e36a4692beb53abfadf0cd", "59e36a4992beb53960e19d59", "59e45089a320fc6f07db57fc", "59e45093a320fc6df03d820b", "59e450a0a320fc6d6afe8b8f", "59e4bec292beb5073f9f86c7", "59e4bec992beb505b38452ea", "59e4becf92beb5059a24dfbd", "59e4bed192beb506960e2ead", "59e4c1e092beb5059a24e02e", "59e4c1f592beb5066ce9c71d", "59e4c1f892beb504f455721d", "59e4c20c92beb505b3845359", "59e4c21792beb5076a80a70c"], "question_list": [{"has_open_option": false, "_id": {"$oid": "59e36607d3578086eb288aef"}, "jumpconstraint_id_list": [], "option_id_list": ["59e36607d3578086eb288af0", "59e36607d3578086eb288af1", "59e36607d3578086eb288af2", "59e4c55692beb504ea29a3d4", "59e5c7e992beb50714cccc21", "59e5c7ee92beb50618b4601e", "59e5c7f292beb505516f0bca", "59e5c8e892beb5073f9fa11c"], "cid": "Q1", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u60a8\u7ecf\u5e38\u521b\u5efa\u4ec0\u4e48\u7c7b\u578b\u7684\u9879\u76ee\uff1f", "updated": {"$date": 1508103815035}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508103815038}, "cid": "A1", "title": "\u95ee\u5377\u8c03\u7814", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288af0"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288aef"}, {"updated": {"$date": 1508103815043}, "cid": "A2", "title": "\u8868\u5355\u62a5\u540d", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288af1"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288aef"}, {"updated": {"$date": 1508103815045}, "cid": "A3", "title": "\u6d4b\u8bc4\u8003\u8bd5", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288af2"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288aef"}, {"updated": {"$date": 1508193750667}, "cid": "A4", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e4c55692beb504ea29a3d4"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288aef"}, {"updated": {"$date": 1508259945657}, "cid": "A5", "title": "\u9009\u98792", "is_open": false, "_id": {"$oid": "59e5c7e992beb50714cccc21"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288aef"}, {"updated": {"$date": 1508259950568}, "cid": "A6", "title": "\u9009\u98793", "is_open": false, "_id": {"$oid": "59e5c7ee92beb50618b4601e"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288aef"}, {"updated": {"$date": 1508259954642}, "cid": "A7", "title": "\u9009\u98794", "is_open": false, "_id": {"$oid": "59e5c7f292beb505516f0bca"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288aef"}, {"updated": {"$date": 1508260200916}, "cid": "A8", "title": "\u9009\u98795", "is_open": false, "_id": {"$oid": "59e5c8e892beb5073f9fa11c"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288aef"}], "jumpconstraint_id_list2": [], "question_type": 2, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {}}, {"has_open_option": false, "_id": {"$oid": "59e36607d3578086eb288af3"}, "jumpconstraint_id_list": [], "option_id_list": ["59e36607d3578086eb288af4", "59e36607d3578086eb288af5", "59e36607d3578086eb288af6", "59e36607d3578086eb288af7", "59e36607d3578086eb288af8", "59e36607d3578086eb288af9", "59e36607d3578086eb288afa", "59e36607d3578086eb288afb"], "cid": "Q2", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u60a8\u4f7f\u7528\u8fc7\u95ee\u5377\u7f51\u54ea\u6b3e\u5e94\u7528\uff1f", "updated": {"$date": 1508103815067}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508103815069}, "cid": "A1", "title": "\u62bd\u5956", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288af4"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288af3"}, {"updated": {"$date": 1508103815074}, "cid": "A2", "title": "\u914d\u989d", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288af5"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288af3"}, {"updated": {"$date": 1508103815076}, "cid": "A3", "title": "\u6295\u7968\u5899", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288af6"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288af3"}, {"updated": {"$date": 1508103815079}, "cid": "A4", "title": "\u5fae\u4fe1\u7ea2\u5305", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288af7"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288af3"}, {"updated": {"$date": 1508103815081}, "cid": "A5", "title": "\u5fae\u4fe1\u7b7e\u5230", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288af8"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288af3"}, {"updated": {"$date": 1508103815083}, "cid": "A6", "title": "\u81ea\u5b9a\u4e49\u57df\u540d", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288af9"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288af3"}, {"updated": {"$date": 1508103815085}, "cid": "A7", "title": "\u9690\u85cf\u95ee\u5377\u7f51\u6807\u5fd7", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288afa"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288af3"}, {"updated": {"$date": 1508103815087}, "cid": "A8", "title": "\u9650\u5b9a\u624b\u673a\u53f7\u7b54\u9898", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288afb"}, "custom_attr": {}, "question_id": "59e36607d3578086eb288af3"}], "jumpconstraint_id_list2": [], "question_type": 3, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {}}, {"has_open_option": false, "_id": {"$oid": "59e36607d3578086eb288afc"}, "jumpconstraint_id_list": [], "option_id_list": ["59e36607d3578086eb288afd"], "cid": "Q3", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u60a8\u7684\u59d3\u540d\uff1a", "updated": {"$date": 1508103815104}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508103815107}, "cid": "A1", "title": "option", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288afd"}, "custom_attr": {"blank_type": "single", "text_row": 1}, "question_id": "59e36607d3578086eb288afc"}], "jumpconstraint_id_list2": [], "question_type": 6, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {}}, {"has_open_option": false, "_id": {"$oid": "59e36607d3578086eb288afe"}, "jumpconstraint_id_list": [], "option_id_list": ["59e36607d3578086eb288aff"], "cid": "Q4", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u8bf7\u586b\u5199\u60a8\u7684\u95ee\u9898\u548c\u5efa\u8bae\uff1a", "updated": {"$date": 1508103815128}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508103815131}, "cid": "A1", "title": "option", "is_open": false, "_id": {"$oid": "59e36607d3578086eb288aff"}, "custom_attr": {"text_row": 4, "text_col": 20}, "question_id": "59e36607d3578086eb288afe"}], "jumpconstraint_id_list2": [], "question_type": 6, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {}}, {"has_open_option": false, "_id": {"$oid": "59e3662992beb5390c1c83d1"}, "jumpconstraint_id_list": [], "option_id_list": ["59e3662992beb5390c1c83d2"], "cid": "Q5", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u5355\u884c\u586b\u7a7a", "updated": {"$date": 1508103849541}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508103849687}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e3662992beb5390c1c83d2"}, "custom_attr": {"text_row": "5", "text_col": "20"}, "question_id": "59e3662992beb5390c1c83d1"}], "jumpconstraint_id_list2": [], "question_type": 6, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"blank_type": "single"}}, {"has_open_option": false, "_id": {"$oid": "59e3662e92beb53a3726ad53"}, "jumpconstraint_id_list": [], "option_id_list": ["59e3662f92beb53a3726ad54", "59e3662f92beb53a3726ad55"], "cid": "Q6", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u591a\u9879\u586b\u7a7a\u9898", "updated": {"$date": 1508103854982}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508103855146}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e3662f92beb53a3726ad54"}, "custom_attr": {"text_row": "1", "text_col": "15"}, "question_id": "59e3662e92beb53a3726ad53"}, {"updated": {"$date": 1508103855183}, "cid": "A2", "title": "\u9009\u98792", "is_open": false, "_id": {"$oid": "59e3662f92beb53a3726ad55"}, "custom_attr": {"text_row": "1", "text_col": "15"}, "question_id": "59e3662e92beb53a3726ad53"}], "jumpconstraint_id_list2": [], "question_type": 95, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {}}, {"has_open_option": false, "_id": {"$oid": "59e3663092beb53abfadf04f"}, "jumpconstraint_id_list": [], "option_id_list": ["59e3663192beb53abfadf050", "59e3663192beb53abfadf051", "59e3663892beb5390c1c83d6", "59e3663a92beb5398a9cac10"], "cid": "Q7", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u591a\u9009\u9898", "updated": {"$date": 1508103856980}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508103857192}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e3663192beb53abfadf050"}, "custom_attr": {}, "question_id": "59e3663092beb53abfadf04f"}, {"updated": {"$date": 1508103857268}, "cid": "A2", "title": "\u9009\u98792", "is_open": false, "_id": {"$oid": "59e3663192beb53abfadf051"}, "custom_attr": {}, "question_id": "59e3663092beb53abfadf04f"}, {"updated": {"$date": 1508103864862}, "cid": "A3", "title": "\u9009\u98793", "is_open": false, "_id": {"$oid": "59e3663892beb5390c1c83d6"}, "custom_attr": {}, "question_id": "59e3663092beb53abfadf04f"}, {"updated": {"$date": 1508103866437}, "cid": "A4", "title": "\u9009\u98794", "is_open": false, "_id": {"$oid": "59e3663a92beb5398a9cac10"}, "custom_attr": {}, "question_id": "59e3663092beb53abfadf04f"}], "jumpconstraint_id_list2": [], "question_type": 3, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {}}, {"has_open_option": false, "_id": {"$oid": "59e3667a92beb53a3726ad5f"}, "jumpconstraint_id_list": [], "option_id_list": ["59e3667a92beb53a3726ad60", "59e3667a92beb53a3726ad61"], "cid": "Q8", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u591a\u9879\u586b\u7a7a\u9898", "updated": {"$date": 1508103930393}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508103930500}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e3667a92beb53a3726ad60"}, "custom_attr": {"text_row": "1", "text_col": "15"}, "question_id": "59e3667a92beb53a3726ad5f"}, {"updated": {"$date": 1508103930548}, "cid": "A2", "title": "\u9009\u98792", "is_open": false, "_id": {"$oid": "59e3667a92beb53a3726ad61"}, "custom_attr": {"text_row": "1", "text_col": "15"}, "question_id": "59e3667a92beb53a3726ad5f"}], "jumpconstraint_id_list2": [], "question_type": 95, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {}}, {"has_open_option": false, "_id": {"$oid": "59e3668292beb538b8f79e80"}, "jumpconstraint_id_list": [], "option_id_list": [], "cid": "Q9", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u56fe\u7247\u6295\u7968\u9898", "updated": {"$date": 1508103938207}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [], "jumpconstraint_id_list2": [], "question_type": 2, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"disp_type": "imagevote_single", "data_show": "on"}}, {"has_open_option": false, "_id": {"$oid": "59e36a2892beb53ae940e0ce"}, "jumpconstraint_id_list": [], "option_id_list": ["59e36a2892beb53ae940e0cf"], "cid": "Q10", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u60a8\u5411\u670b\u53cb\u6216\u540c\u4e8b\u63a8\u8350\u6211\u4eec\u7684\u53ef\u80fd\u6027\u6709\u591a\u5927\uff1f", "updated": {"$date": 1508104872312}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508104872530}, "cid": "A1", "title": " ", "is_open": false, "_id": {"$oid": "59e36a2892beb53ae940e0cf"}, "custom_attr": {}, "question_id": "59e36a2892beb53ae940e0ce"}], "jumpconstraint_id_list2": [], "question_type": 50, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"min_answer_num": 0, "max_answer_num": 10, "disp_type": "nps_score"}}, {"has_open_option": false, "_id": {"$oid": "59e36a3b92beb539b460802f"}, "jumpconstraint_id_list": [], "option_id_list": ["59e36a3c92beb539b4608030", "59e36a3c92beb539b4608031", "59e36a3c92beb539b4608032"], "cid": "Q11", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u60a8\u73b0\u5728\u7684\u4f4d\u7f6e\u5728\u54ea\uff1f", "updated": {"$date": 1508104891974}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508104892170}, "cid": "A1", "title": "\u5730\u5740", "is_open": false, "_id": {"$oid": "59e36a3c92beb539b4608030"}, "custom_attr": {"name_en": "address", "text_row": "1", "text_col": "15"}, "question_id": "59e36a3b92beb539b460802f"}, {"updated": {"$date": 1508104892238}, "cid": "A2", "title": "\u7ecf\u5ea6", "is_open": false, "_id": {"$oid": "59e36a3c92beb539b4608031"}, "custom_attr": {"name_en": "longitude", "text_row": "1", "text_col": "15"}, "question_id": "59e36a3b92beb539b460802f"}, {"updated": {"$date": 1508104892344}, "cid": "A3", "title": "\u7eac\u5ea6", "is_open": false, "_id": {"$oid": "59e36a3c92beb539b4608032"}, "custom_attr": {"name_en": "latitude", "text_row": "1", "text_col": "15"}, "question_id": "59e36a3b92beb539b460802f"}], "jumpconstraint_id_list2": [], "question_type": 95, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"disp_type": "geographical_multiple_blank"}}, {"has_open_option": false, "_id": {"$oid": "59e36a3f92beb53860d3e19c"}, "jumpconstraint_id_list": [], "option_id_list": ["59e36a4092beb53860d3e19d"], "cid": "Q12", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u4e0a\u4f20\u9898", "updated": {"$date": 1508104895867}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508104896036}, "cid": "A1", "title": "\u9009\u62e9\u6587\u4ef6\u4e0a\u4f20", "is_open": false, "_id": {"$oid": "59e36a4092beb53860d3e19d"}, "custom_attr": {}, "question_id": "59e36a3f92beb53860d3e19c"}], "jumpconstraint_id_list2": [], "question_type": 95, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"disp_type": "upload_file"}}, {"has_open_option": false, "_id": {"$oid": "59e36a4192beb539366c6ee2"}, "jumpconstraint_id_list": [], "option_id_list": [], "cid": "Q13", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u63cf\u8ff0\u8bf4\u660e", "updated": {"$date": 1508104897740}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [], "jumpconstraint_id_list2": [], "question_type": 70, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {}}, {"has_open_option": false, "_id": {"$oid": "59e36a4692beb53abfadf0cd"}, "jumpconstraint_id_list": [], "option_id_list": [], "cid": "Q14", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u56fe\u7247\u6295\u7968\u9898", "updated": {"$date": 1508104902468}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [], "jumpconstraint_id_list2": [], "question_type": 2, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"disp_type": "imagevote_single", "data_show": "on"}}, {"has_open_option": false, "_id": {"$oid": "59e36a4992beb53960e19d59"}, "jumpconstraint_id_list": [], "option_id_list": ["59e36a4992beb53960e19d5a", "59e36a4c92beb53a3726adc2", "59e36a4e92beb53abfadf0ce"], "cid": "Q15", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u6587\u5b57\u6295\u7968\u9898", "updated": {"$date": 1508104905670}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508104905908}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e36a4992beb53960e19d5a"}, "custom_attr": {}, "question_id": "59e36a4992beb53960e19d59"}, {"updated": {"$date": 1508104908899}, "cid": "A3", "title": "\u9009\u98793", "is_open": false, "_id": {"$oid": "59e36a4c92beb53a3726adc2"}, "custom_attr": {}, "question_id": "59e36a4992beb53960e19d59"}, {"updated": {"$date": 1508104910772}, "cid": "A4", "title": "\u9009\u98794", "is_open": false, "_id": {"$oid": "59e36a4e92beb53abfadf0ce"}, "custom_attr": {}, "question_id": "59e36a4992beb53960e19d59"}], "jumpconstraint_id_list2": [], "question_type": 2, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"disp_type": "singlevote", "data_show": "on"}}, {"has_open_option": false, "_id": {"$oid": "59e45089a320fc6f07db57fc"}, "jumpconstraint_id_list": [], "option_id_list": ["59e45089a320fc6f07db57fd"], "cid": "Q16", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u5355\u884c\u586b\u7a7a", "updated": {"$date": 1508163849121}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508163849485}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e45089a320fc6f07db57fd"}, "custom_attr": {"text_row": "5", "text_col": "20"}, "question_id": "59e45089a320fc6f07db57fc"}], "jumpconstraint_id_list2": [], "question_type": 6, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"blank_type": "single"}}, {"has_open_option": false, "_id": {"$oid": "59e45093a320fc6df03d820b"}, "jumpconstraint_id_list": [], "option_id_list": ["59e45094a320fc6df03d820c", "59e45094a320fc6df03d820d"], "cid": "Q17", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u6253\u5206\u9898", "updated": {"$date": 1508163859856}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508163860162}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e45094a320fc6df03d820c"}, "custom_attr": {}, "question_id": "59e45093a320fc6df03d820b"}, {"updated": {"$date": 1508163860262}, "cid": "A2", "title": "\u9009\u98792", "is_open": false, "_id": {"$oid": "59e45094a320fc6df03d820d"}, "custom_attr": {}, "question_id": "59e45093a320fc6df03d820b"}], "jumpconstraint_id_list2": [], "question_type": 50, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"min_answer_num": 1, "max_answer_num": 5}}, {"has_open_option": false, "_id": {"$oid": "59e450a0a320fc6d6afe8b8f"}, "jumpconstraint_id_list": [], "option_id_list": [], "cid": "Q18", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u56fe\u7247\u5355\u9009\u9898", "updated": {"$date": 1508163872738}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [], "jumpconstraint_id_list2": [], "question_type": 2, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"disp_type": "image_single"}}, {"has_open_option": false, "_id": {"$oid": "59e4bec292beb5073f9f86c7"}, "jumpconstraint_id_list": [], "option_id_list": ["59e4bec292beb5073f9f86c8"], "cid": "Q19", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u5355\u884c\u586b\u7a7a", "updated": {"$date": 1508192066099}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508192066437}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e4bec292beb5073f9f86c8"}, "custom_attr": {"text_row": "5", "text_col": "20"}, "question_id": "59e4bec292beb5073f9f86c7"}], "jumpconstraint_id_list2": [], "question_type": 6, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"blank_type": "single"}}, {"has_open_option": false, "_id": {"$oid": "59e4bec992beb505b38452ea"}, "jumpconstraint_id_list": [], "option_id_list": ["59e4beca92beb505b38452eb"], "cid": "Q20", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u5355\u884c\u586b\u7a7a", "updated": {"$date": 1508192073644}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508192074046}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e4beca92beb505b38452eb"}, "custom_attr": {"text_row": "5", "text_col": "20"}, "question_id": "59e4bec992beb505b38452ea"}], "jumpconstraint_id_list2": [], "question_type": 6, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"blank_type": "single"}}, {"has_open_option": false, "_id": {"$oid": "59e4becf92beb5059a24dfbd"}, "jumpconstraint_id_list": [], "option_id_list": ["59e4bed092beb5059a24dfbe"], "cid": "Q21", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u5355\u884c\u586b\u7a7a", "updated": {"$date": 1508192079698}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508192080019}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e4bed092beb5059a24dfbe"}, "custom_attr": {"text_row": "5", "text_col": "20"}, "question_id": "59e4becf92beb5059a24dfbd"}], "jumpconstraint_id_list2": [], "question_type": 6, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"blank_type": "single"}}, {"has_open_option": false, "_id": {"$oid": "59e4bed192beb506960e2ead"}, "jumpconstraint_id_list": [], "option_id_list": ["59e4bed192beb506960e2eae", "59e4bed192beb506960e2eaf"], "cid": "Q22", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u591a\u9009\u9898", "updated": {"$date": 1508192081039}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508192081269}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e4bed192beb506960e2eae"}, "custom_attr": {}, "question_id": "59e4bed192beb506960e2ead"}, {"updated": {"$date": 1508192081409}, "cid": "A2", "title": "\u9009\u98792", "is_open": false, "_id": {"$oid": "59e4bed192beb506960e2eaf"}, "custom_attr": {}, "question_id": "59e4bed192beb506960e2ead"}], "jumpconstraint_id_list2": [], "question_type": 3, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {}}, {"has_open_option": false, "_id": {"$oid": "59e4c1e092beb5059a24e02e"}, "jumpconstraint_id_list": [], "option_id_list": ["59e4c1e192beb5059a24e02f"], "cid": "Q23", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u5355\u884c\u586b\u7a7a", "updated": {"$date": 1508192864996}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508192865195}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e4c1e192beb5059a24e02f"}, "custom_attr": {"text_row": "5", "text_col": "20"}, "question_id": "59e4c1e092beb5059a24e02e"}], "jumpconstraint_id_list2": [], "question_type": 6, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"blank_type": "single"}}, {"has_open_option": false, "_id": {"$oid": "59e4c1f592beb5066ce9c71d"}, "jumpconstraint_id_list": [], "option_id_list": ["59e4c1f592beb5066ce9c71e", "59e4c1f592beb5066ce9c71f"], "cid": "Q24", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u6253\u5206\u9898", "updated": {"$date": 1508192885375}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508192885810}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e4c1f592beb5066ce9c71e"}, "custom_attr": {}, "question_id": "59e4c1f592beb5066ce9c71d"}, {"updated": {"$date": 1508192885919}, "cid": "A2", "title": "\u9009\u98792", "is_open": false, "_id": {"$oid": "59e4c1f592beb5066ce9c71f"}, "custom_attr": {}, "question_id": "59e4c1f592beb5066ce9c71d"}], "jumpconstraint_id_list2": [], "question_type": 50, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"min_answer_num": 1, "max_answer_num": 5}}, {"has_open_option": false, "_id": {"$oid": "59e4c1f892beb504f455721d"}, "jumpconstraint_id_list": [], "option_id_list": ["59e4c1f892beb504f455721e", "59e4c1f992beb504f455721f", "59e4c20192beb506439fae81", "59e4c20492beb506ea0d790a"], "cid": "Q25", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u6587\u5b57\u6295\u7968\u9898", "updated": {"$date": 1508192888600}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508192888994}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e4c1f892beb504f455721e"}, "custom_attr": {}, "question_id": "59e4c1f892beb504f455721d"}, {"updated": {"$date": 1508192889102}, "cid": "A2", "title": "\u9009\u98792", "is_open": false, "_id": {"$oid": "59e4c1f992beb504f455721f"}, "custom_attr": {}, "question_id": "59e4c1f892beb504f455721d"}, {"updated": {"$date": 1508192897462}, "cid": "A3", "title": "\u9009\u98793", "is_open": false, "_id": {"$oid": "59e4c20192beb506439fae81"}, "custom_attr": {}, "question_id": "59e4c1f892beb504f455721d"}, {"updated": {"$date": 1508192900280}, "cid": "A4", "title": "\u9009\u98794", "is_open": false, "_id": {"$oid": "59e4c20492beb506ea0d790a"}, "custom_attr": {}, "question_id": "59e4c1f892beb504f455721d"}], "jumpconstraint_id_list2": [], "question_type": 2, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"disp_type": "singlevote", "data_show": "on"}}, {"has_open_option": false, "_id": {"$oid": "59e4c20c92beb505b3845359"}, "jumpconstraint_id_list": [], "option_id_list": ["59e4c20c92beb505b384535a", "59e4c20c92beb505b384535b"], "cid": "Q26", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u6253\u5206\u9898", "updated": {"$date": 1508192908387}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508192908700}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e4c20c92beb505b384535a"}, "custom_attr": {}, "question_id": "59e4c20c92beb505b3845359"}, {"updated": {"$date": 1508192908824}, "cid": "A2", "title": "\u9009\u98792", "is_open": false, "_id": {"$oid": "59e4c20c92beb505b384535b"}, "custom_attr": {}, "question_id": "59e4c20c92beb505b3845359"}], "jumpconstraint_id_list2": [], "question_type": 50, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {"min_answer_num": 1, "max_answer_num": 5}}, {"has_open_option": false, "_id": {"$oid": "59e4c21792beb5076a80a70c"}, "jumpconstraint_id_list": [], "option_id_list": ["59e4c21792beb5076a80a70d", "59e4c21892beb5076a80a70e"], "cid": "Q27", "questionpage_id": "59e36607d3578086eb288aee", "related_question_list": [], "title": "\u6392\u5e8f\u9898", "updated": {"$date": 1508192919546}, "matrixrow_list": [], "matrixrow_id_list": [], "option_list": [{"updated": {"$date": 1508192919992}, "cid": "A1", "title": "\u9009\u98791", "is_open": false, "_id": {"$oid": "59e4c21792beb5076a80a70d"}, "custom_attr": {}, "question_id": "59e4c21792beb5076a80a70c"}, {"updated": {"$date": 1508192920131}, "cid": "A2", "title": "\u9009\u98792", "is_open": false, "_id": {"$oid": "59e4c21892beb5076a80a70e"}, "custom_attr": {}, "question_id": "59e4c21792beb5076a80a70c"}], "jumpconstraint_id_list2": [], "question_type": 60, "displayconstraint_id_list2": [], "project_id": "59e36607d3578086eb288aed", "displayconstraint_id_list": [], "custom_attr": {}}], "project_id": "59e36607d3578086eb288aed", "custom_attr": {}}], "version": 1, "question_count": 27, "end_desc": "<p style=\"text-align: center;\">\u60a8\u5df2\u5b8c\u6210\u672c\u6b21\u95ee\u5377\uff0c\u611f\u8c22\u60a8\u7684\u5e2e\u52a9\u4e0e\u652f\u6301</p>", "status": 0, "updated": {"$date": 1508260201316}, "first_create_for_member": false, "custom_attr": {"survey_share_pic_url": "https://www.wenjuan.com/static/images/rspd_share_wenjuan.png", "panelsite": "", "theme": "darkblue", "scrollbar": "on", "new_custom_style": {"TerminalStyle": {"PC": {"R_BgColor": "", "BgImagePosition": "", "backgroundRepeat": "repeat", "ImageURl": "", "BgColor": "#efefef", "WjBgColor": "#fff", "BgImageURl": "", "font": [{"bold": "", "color": "", "underline": "", "italic": "", "font": "", "id": "QuesitonStyle", "size": ""}, {"bold": "", "color": "", "underline": "", "italic": "", "font": "", "id": "OptionsStyle", "size": ""}, {"bold": "", "color": "", "underline": "", "italic": "", "font": "", "id": "TopicStyle", "size": ""}, {"bold": "", "color": "", "underline": "", "italic": "", "font": "", "id": "WelcomeStyle", "size": ""}, {"bold": "", "color": "", "underline": "", "italic": "", "font": "", "id": "EndStyle", "size": ""}], "OtherColor": "#53a4f4", "R_OtherColor": "#fff"}, "Phone": {"TopBgColor": "#53a4f4", "BgColor": "#ffffff", "theme": "7", "R_TopBgColor": "#ffffff", "font": [{"bold": "", "color": "", "underline": "", "italic": "", "font": "", "id": "QuesitonStylePhone", "size": ""}, {"bold": "", "color": "", "underline": "", "italic": "", "font": "", "id": "OptionsStylePhone", "size": ""}, {"bold": "", "color": "", "underline": "", "italic": "", "font": "", "id": "RemarkStylePhone", "size": ""}], "OtherColor": "#53a4f4", "R_OtherColor": "#ffffff"}}, "Language": "zh_CN", "Number": "false", "ProgressBar": "true", "logoPosition": "left", "logoURL": ""}, "screenout_desc": "\u4e0d\u597d\u610f\u601d\uff0c\u60a8\u4e0d\u592a\u9002\u5408\u672c\u6b21\u8c03\u67e5\uff0c\u8c22\u8c22\u60a8\u7684\u65f6\u95f4"}, "is_shared": false, "created": {"$date": 1508103815018}, "title": "<p style=\"text-align: center;\">\u5458\u5de5\u57f9\u8bad\u8c03\u67e5</p>", "creator_id": "59e365a7a320fc6f07db4112", "_id": {"$oid": "59e36607d3578086eb288aed"}, "is_hdgc": false};　
+$(function(){
+fallback();
+$('#wjContent_close, #wjContent_closeT').click(function(){
+$('.wjContent_tc').hide()
+})
+// $("div:not(.p_begin_desc)").click(function(){
+// $(backspace).keypress(function(){
+// $('.wjContent_tc').css('display','block');
+// })
+// });
+idyC.hoverTip($('.lj_tip'), {
+text:'点击查看帮助',
+dir:'left',
+offsetX:-12,
+offsetY:26
+});
+idyC.hoverTip($('.lj_tip2,.yy_tip'), {
+text:'点击查看帮助'
+});
+$('#lightBox').remove();
+// loadMack({off:'on',Limg:0,text:'加载中...',set:0});
+$('.logicset').click(function(){
+var global_logic_set_tit = '<div class="logic_set_tab"><a class="tab_tit tab_jump active">跳转逻辑<i>0</i></a><a class="tab_tit tab_display">显示逻辑<i>0</i></a></div>';
+ajax_loads(952,256,global_logic_set_tit,'/edit/ajax/logic_set/59e36607d3578086eb288aed/?v=' + new Date().getTime(), 'global_logic_set_popup');
+});
+$('.option_relation_btn').click(function(){
+var question_id = $('.right_operate').attr('oid');
+ajax_loads(600,256,'关联设置','/edit/ajax/q_relation_list/59e36607d3578086eb288aed/?question_id='+ question_id +'&v=' + new Date().getTime());
+});
+$('#appearset').click(function(){
+location.href = '/edit/appearset/59e36607d3578086eb288aed/?v=' + new Date().getTime();
+//mapsets(918,600,'外观设置','/edit/appearset/59e36607d3578086eb288aed/?v=' + new Date().getTime());
+});
+$('#ansrest').click(function(){
+ajax_loads(640,380,'收集设置','/edit/ansrest/59e36607d3578086eb288aed/?pre_page=design&v=' + new Date().getTime());
+});
+var new_rspd_count = 0;
+if(new_rspd_count > 0)
+{
+jsAlert({content:"<p style='text-align:left;'>您的问卷已收集0份数据，修改问卷可能影响收集到的数据。如需修改问卷请至问卷列表页，请点击编辑按钮。</p>", obj: function(){
+window.location.href = "/mysurvey";
+}});
+}
+$().Tjj('.fast_machine a',{'widthType':false,'Top':2});
+loadMack({off:'off'});
+sessionStorage.edit_change = JSON.stringify({"question": false});
+// 发布问卷
+$('.btn-project-publish').click(function(){
+var showShare = (project.share_status == 0 && (project.copy_from_pid == undefined || project.copy_from_pid == null || project.copy_from_pid == ''));
+var hasMobile = "15818868130" ? true : false;
+var option = {
+type: '问卷',
+surveyTitle: '员工培训调查',
+showShare: showShare,
+page: 'surveyEdit',
+hasMobile: hasMobile
+};
+projectPublishFun.init(pid, option);
+});
+});
+//弹出框打包配置
+function mapsets(w,h,title,url){
+var wbs = new jsbox({
+onlyid:"maptss",
+title:title,
+conw:w,
+conh:h,
+FixedTop:170,
+iframe:true,
+url:url,
+range:false,
+mack:true
+}).show();
+}
+function ajax_loads(w,h,title,url,id){
+var wbs = new jsbox({
+onlyid: id ? id : "maptss",
+title:title,
+conw:w,
+//conh:h,
+FixedTop:170,
+loads:true,
+url:url,
+range:false,
+mack:true
+}).show();
+}
+function close_pop_window(){
+$("#maptss").remove();
+$('#lightBox').remove();
+}
+function flush_after_close_window(){
+$("#maptss").remove();
+$('#lightBox').remove();
+window.location.href = "/edit/survey/59e36607d3578086eb288aed/";
+}
+function change_project_status_callback(info){
+setTimeout(function(){
+
+$.ajax({
+url : '/enterprise/check_member_permission/?permission_type=collect&project_id=59e36607d3578086eb288aed',
+type : 'GET',
+dataType : 'json',
+success : function(ret){
+if(ret.status == 200){
+if(ret.code == 1){
+var url = "/collect/urllink/59e36607d3578086eb288aed/?fp="+info.first_publish;
+location.href = url;
+}else if(ret.code == 2){
+location.href = '/report/project/59e36607d3578086eb288aed?is_hdgc=0'
+}
+}else{
+check_permission = false;
+loadMack({ off: 'on', Limg: 1, text:'请稍后再试', set: 1000 });
+}
+}
+});
+
+}, 3000);
+}
+var client_uuid = "8fe38b34-b31c-11e7-8581-44a8420c559c";
+//矩阵题宽度调整保存回调
+function matrixWidth_callback(qid,col_width_array,new_question){
+var table_width =0;
+var objPadding = 0;
+update_question(new_question);
+$("li[oid='"+qid+"'] .table tbody tr").each(function(m){
+table_width =0;
+$(this).children("td").each(function(i){
+objPadding=parseFloat($(this).css('paddingLeft'))+parseFloat($(this).css('paddingRight'))+1;
+if(col_width_array[i]==undefined){col_width_array[i]=col_width_array[i-1]};
+$(this).width(col_width_array[i]+"px");
+if(m>0&&i>0){
+if($(this).children(".div").length>0){
+$(this).find(".div").width(col_width_array[i]+"px");
+}else{
+$(this).wrapInner('<div class="div" style="width:'+(col_width_array[i])+'px"></div>');
+}
+}
+table_width+=col_width_array[i]+objPadding;
+});
+});
+$("li[oid='"+qid+"'] .table").width(table_width);
+$(".jsbox_close").click();
+}
+</script>
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script src="js/enums.js"></script>
+<script src="js/models.js?"></script>
+<script src="js/juicer.js"></script>
+<script src="js/survey_utils.js"></script>
+<!--加载提示-->
+<link type="text/css" rel="stylesheet" href="css/load.css" />
+<script type="text/javascript" src="js/load.js"></script>
+<!--气泡弹框-->
+<link type="text/css" rel="stylesheet" href="css/JsBubble.css" />
+<script type="text/javascript" src="js/JsBubble.js"></script>
+<!--弹出框-->
+<link type="text/css" rel="stylesheet" href="css/jsbox.css" />
+<script type="text/javascript" src="js/jsbox.js"></script>
+<!--汽包弹出框-->
+<link type="text/css" rel="stylesheet" href="css/Tjj.css" />
+<script type="text/javascript" src="js/jquery.zn.js"></script>
+<!--FCK编辑器-->
+<script type="text/javascript" src="js/ckeditor.js"></script>
+<script src="js/edit.js"></script>
+<script src="js/edit_utils.js"></script>
+<script src="js/edit_init.js"></script>
+<script src="js/q_template.js"></script>
+<script src="js/ssq.js"></script>
+<script type="text/javascript">
+var active_index = 0;
+var found = 0;
+$(".main-nav li a").each(function(){
+if($(this).text() == '问卷')
+found = 1;
+if(found == 0)
+active_index += 1;
+});
+set_active_head_v2(active_index);
+var first_edit = false;
+if (first_edit){
+//新手帮助
+//Help_up();
+}
+// window.onbeforeunload = function(){
+// syncPost('/edit/ajax/exit_edit/'+get_oid(project)+"/", {});
+// }
+$(function(){
+
+showUnlockBtn(true, 2);
+
+})
+</script>
+<!--图片裁剪-->
+<link type="text/css" rel="stylesheet" href="css/Jcrop.css" />
+<script type="text/javascript" src="js/Jcrop.js"></script>
+<script type="text/javascript" src="js/demo.min.js"></script>
+<script type="text/javascript" src="js/dmuploader.min.js"></script>
+
+</div>
+<script type="text/javascript">
+$('li[ent_auth="report"]').click(function(){
+$.ajax({
+url : '/enterprise/check_member_permission/?permission_type=report&project_id='+pid,
+type : 'GET',
+dataType : 'json',
+success : function(ret){
+if(ret.status == 200){
+if(ret.code == 1){
+window.location.href="/report/basic_chart/59e36607d3578086eb288aed?pid=59e36607d3578086eb288aed";
+}else if(ret.code == 2){
+loadMack({ off: 'on', Limg: 1, text:'您没有权限使用，请联系项目所有者', set: 1000 });
+}
+}else{
+loadMack({ off: 'on', Limg: 1, text:'请稍后再试', set: 1000 });
+}
+}
+});
+});
+function checkAuth(){
+$.ajax({
+url : '/enterprise/check_member_permission/?permission_type=collect&project_id='+pid,
+type : 'GET',
+dataType : 'json',
+async : false,
+success : function(ret){
+if(ret.status == 200){
+if(ret.code == 1){
+window.location.href="/collect/urllink/"+pid;
+}else if(ret.code == 2){
+loadMack({ off: 'on', Limg: 1, text:'您没有权限使用，请联系项目所有者', set: 1000 });
+}
+}else{
+loadMack({ off: 'on', Limg: 1, text:'请稍后再试', set: 1000 });
+}
+}
+});
+}
+$(function(){
+var super_account = '0';
+if (super_account != 1){senior_user_go();}
+$().top_hj();
+$('.left_Menu li.gz_wx').hover(function(){
+$(this).find('.gz_weixin_ewm').stop(true,true).fadeIn(150);
+},function(){
+$(this).find('.gz_weixin_ewm').stop(true,true).fadeOut(150);
+});
+$(".loginBox").mouseup(function(){return false;});
+$('body').mouseup(function(){
+$(".loginBox").fadeOut("slow");
+$('.username').find('.loginMeun').hide();
+$('.username').find('.arrowupt').removeClass('atop');
+});
+$("a img[src='http://eiv.baidu.com/hmt/icon/21.gif']").hide();
+});
+function senior_user_go(){
+var current_user_id = "59e365a7a320fc6f07db4112";
+var senior_user_time = new Date();
+var senior_user_time_stamp = new Date(senior_user_time.toLocaleDateString()).getTime();
+var page_type_str = '';
+if (window.location.href.indexOf('/edit/survey/')!=-1){
+page_type_str = "edit";
+}else if (window.location.href.indexOf('/collect/')!=-1){
+page_type_str = "collect";
+}else if (window.location.href.indexOf('/report/')!=-1){
+page_type_str = "report";
+}
+if($.cookie("bj_senior_" + current_user_id + "_" + senior_user_time_stamp) != "1" && page_type_str == "edit"){$(".senior_user_edit").show();}
+if($.cookie("sj_senior_" + current_user_id + "_" + senior_user_time_stamp) != "1" && page_type_str == "collect"){$(".senior_user_urllink").show();}
+if($.cookie("dt_senior_" + current_user_id + "_" + senior_user_time_stamp) != "1" && page_type_str == "report"){$(".senior_user_data").show();}
+$(".bottom_senior_user .su_btn_del").click(function(){
+var bottom_senior_user_obj = $(this).parents(".bottom_senior_user");
+if (bottom_senior_user_obj.hasClass("senior_user_edit")){
+$.cookie("bj_senior_" + current_user_id + "_" + senior_user_time_stamp, "1", {expires:30,path:'/'});
+$(".senior_user_edit").hide();
+}else if (bottom_senior_user_obj.hasClass("senior_user_urllink")){
+$.cookie("sj_senior_" + current_user_id + "_" + senior_user_time_stamp, "1", {expires:30,path:'/'});
+$(".senior_user_urllink").hide();
+}else if (bottom_senior_user_obj.hasClass("senior_user_data")){
+$.cookie("dt_senior_" + current_user_id + "_" + senior_user_time_stamp, "1", {expires:30,path:'/'});
+$(".senior_user_data").hide();
+}
+});
+$(".bottom_senior_user .senior_user_bt").click(function(){
+var name = $(this).attr("name");
+_hmt.push(['_trackEvent', name, 'click', 'senior_user']);
+window.open('/senior_user');
+});
+}
+
+$.ajax({
+type: "get",
+url: "/message/check",
+data: "",
+success: function (result) {
+if(result=='True'){
+$('.wjNews').html("<span class='PointRed'></span>");
+}
+}
+});
+
+(function($) {
+$.fn.extend({
+"top_hj": function(Obj){
+if (!Obj) {Obj = {}}
+var Tinfo = {parent: Obj.parent || ".Tj",url: Obj.url || "/about/zxzx/"};
+var Zonw = 0;
+var str='edit';
+/*if(location.href.indexOf(str)<0){
+$('body').prepend('<div class="GoBack ie6fixedBR" style="right:' + Zonw + 'px" ><a class="top_hj" title="置顶" href="javascript:;"></a><a title="关注问卷网微信" class="top_weixin" href="javascript:;"></a><a class="top_feedback" target="_blank" href="' + Tinfo.url + '"></a></div>');
+} */
+fu_scroll($(window));
+$(window).scroll(function() {$('.gzweixin').hide();fu_scroll($(this))});
+$('.top_hj').live('click',function() {$('html,body').animate({scrollTop: 0},'slow');});
+$('.top_weixin').die().live('click',function() {
+var gzweixin = $('.gzweixin:visible');
+if (gzweixin.length > 0) {
+gzweixin.hide()
+} else {
+addGzTip($(this));
+}
+return
+});
+function fu_scroll(_this) {var scrollT = _this.scrollTop();if (scrollT > 300) {
+$('.top_hj').show();
+} else {
+$('.top_hj').hide();
+}
+}
+function addGzTip(obj) {
+var x = obj.offset().left - 160;
+var y = obj.offset().top - 123;
+var gzweixin = $('gzweixin');
+if (gzweixin.length > 0) {
+gzweixin.css({'top': y + 'px','left': x + 'px'});
+} else {
+var con = '<div style="top:' + y + 'px;left:' + x + 'px;" class="gzweixin"></div>';
+$('body').append(con);
+}
+}
+}
+})
+})(jQuery);
+</script>
+<script type="text/javascript" src="js/third_party_stat.js"></script>
+<script type="text/javascript">
+var pid = '59e36607d3578086eb288aed';
+$(function(){
+autoheight();
+var resizeTimer1 = null;
+$(window).resize(function(){
+if (resizeTimer1) clearTimeout(resizeTimer1);
+resizeTimer1 = setTimeout("autoheight()", 100);
+});
+});
+function autoheight(){
+if(($(document).height()-$('body').innerHeight())>0){
+$('.footer_w').css('margin-top','0px');
+$('.footer_w').css('margin-top',($(document).height()-$('body').innerHeight())+'px')
+};
+}
+(function($) {
+$.fn.extend({
+"MenuFixed_top": function(obj,top,as) {
+function Mf() {
+var scrollT = $(this).scrollTop();
+if (scrollT > top) {
+//obj.attr('style','position:absolute; top:'+(scrollT-80)+'px;');
+var h = obj.height();
+obj.attr('style', 'position:fixed; top:0px;');
+obj.addClass('this_fixed');
+obj.parent().css({paddingTop:h+'px'});
+//$('<div class="fixed_next" style="width:1px;height:'+h+'+px"></div>').insertAfter(obj);
+} else {
+obj.parent().css({paddingTop:'0px'});
+obj.attr('style', '');
+obj.removeClass('this_fixed');
+// obj.next().remove();
+}
+}
+Mf();
+$(window).scroll(function() {
+Mf();
+});
+}
+});
+})(jQuery);
+</script>
+</body>

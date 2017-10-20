@@ -1,0 +1,26 @@
+.Tjj{
+	position:absolute;
+	min-width:50px;
+	background:#454545;
+	border-radius:5px;
+	padding:5px;
+	z-index:5100;
+	color:#FFFFFF;
+	text-align:center;
+	box-shadow:0 0 5px #999999;
+	opacity:0.9;
+	z-index:1500; 
+	}
+.TjjTop span{
+	color:#999999;
+	font-weight:bold;
+	padding:0 5px;
+	}
+.Tjj .tj{
+	position:absolute;
+	top:26px;
+	width:11px;
+	height:6px;
+	z-index:1501;
+	background:url(../img/j.gif) no-repeat;
+	}	
